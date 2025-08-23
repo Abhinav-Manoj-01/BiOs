@@ -1,0 +1,17 @@
+Q- Write a program to check whether a string is a palindrome.
+Compares the original string to its reverse. A string is a palindrome if it reads the same forwards and backwards.
+This can be done by using slicing (`string[::-1]`) to reverse the string and then checking if it matches the original.
+
+Q- Write a program to reverse only the alphabets in a string without changing the position of special characters.
+First identify all the alphabetic characters and stores them in a stack or list.
+Then, it traverses the original string and rebuilds it character by character. Thus the reversing is done
+
+Q- Write a program to find all pairs in a list whose XOR is equal to a given target.
+For each element, it calculates the value that would complete the XOR to match the target 
+(i.e., target ^ element). If this complement is already in the set, a valid pair is found.
+The result is a list of all such pairs that satisfy the XOR condition.
+
+Q- Write a function that takes two strings and returns True if they are anagrams of each other, and False otherwise.
+To determine if two strings are anagrams of each other, the function compares the frequency of 
+characters in both strings.It then counts how many times each character appears in both strings. 
+If the two frequency counts are identical, the strings are anagrams.
