@@ -1,0 +1,43 @@
+Writeups For Overthewire Bandit
+Level 1
+Log in using the Level 0 credentials. The password for the next level was stored in a file named `-`. I had to treat it as a regular file in the current directory to read its contents. Then got the password for Level 1 .
+Level 2
+The password for the next level was stored in a file called `--spaces in this filename--`. Since the file name had -- and spaces, I couldn’t access it directly like a normal file. I had to reference the full name properly so the shell could interpret it as a single file. The file revealed the password for Level 3.
+Level 3
+The password was hidden in a file called `.hidden` inside the `inhere` directory. Since the file had a dot at the beginning, it was hidden by default. I navigated into the directory, listed all files including hidden ones, and found the `.hidden` file. Reading it gave me the password for Level 4.
+Level 4
+Password was stored in the only human-readable file in the `inhere` directory. I checked the files in that folder and filtered out the one that contained readable text . That file had the password for Level 5.
+Level 5
+The password was stored in a file somewhere in the `inhere` directory and its subdirectories. The hint said the file was human-readable, 1033 bytes in size, and mot executable. I searched recursively through the folders, looked for a file matching those exact conditions, and found it.
+Level 6
+Password was stored in a file located somewhere on the server, owned by user bandit7, group bandit6, and exactly 33 bytes in size. I searched the entire filesystem for files matching those criteria. Once I found the correct file, I read its contents and got the password for Level 7.
+Level 7
+The password was stored in a file named `data.txt`. The task was to find the only line in the file that appeared only once. I scanned the file and identified the unique line, which turned out to be the password for Level 8.
+Level 8
+Password was stored in `data.txt`, but it was encoded in base64. I decoded the contents of the file and got password.
+Level 9
+Password was stored in a file called `data.txt`, but this time it was encoded using *rot13 cipher. I decoded the file with rot13 to reveal the password for Level 10.
+Level 10
+Password was hidden in a file named `data.txt`, but it was encoded using the *rot13 cipher .Decoding the file with rot13 revealed the password.
+Level 11
+Password was stored in the file `data.txt`, but this time it was encoded using gzip compression. I decompressed the file to extract the password.
+Level 12
+Password was inside a file named `data.txt`, which was compressed using bzip2. I decompressed the file and got the password.
+Level 13
+Password was stored in a file called `data.txt`, which was compressed using xz compression. I decompressed the file and got the password for Level 14.
+Level 14
+The password was stored in a file named `data.txt`, which was compressed using tar with xz compression ( `.tar.xz` archive). I extracted the archive to access the file inside.
+Level 15
+Password was hidden in a file named `data.txt`, which was compressed as a tar.gz archive. I extracted the archive to find the file containing the password.
+Level 16
+Password was inside a file called `data.txt`, which was compressed using gzip within a tar archive (`.tar.gz`). I extracted the archive and decompressed the file.
+
+
+
+
+
+
+
+
+
+
