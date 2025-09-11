@@ -1,6 +1,0 @@
-CryptoHack is a hands-on, puzzle-based platform for learning cryptography. 
-This course introduces you to core cryptographic concepts by solving interactive challenges that
-blend simple topics like classical ciphers, encodings, and number systems, then move into modern 
-cryptography—RSA, hash functions, block ciphers, and real-world attack techniques.
-By the end, you’ll understand how cryptographic systems work, where they fail, and how 
-to think like a cryptographer or security researcher.
