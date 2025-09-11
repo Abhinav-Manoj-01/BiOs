@@ -1,9 +1,7 @@
-I completed setting up a simple yet secure chat application on Ubuntu using Python. The goal was to create a communication system between a server and a client that not only exchanges messages but also does so securely using encryption and basic authentication.
-
-The first step was ensuring Python 3 and pip were installed and ready to use. After setting up a dedicated project folder, I generated SSL certificates using OpenSSL, which allowed me to encrypt the communication between the server and the client. This step ensured that any data exchanged wouldn't be exposed to third parties, even on an insecure network.
-
-From there, I developed two separate Python scripts — one for the server and one for the client. The server listens for incoming connections, performs a username and password check, and then handles incoming messages securely. On the client side, the program initiates a secure connection, sends authentication details, and exchanges messages with the server.
-
-I ran both programs in separate terminals to simulate real-time communication. Once connected, the server verified the credentials and successfully exchanged encrypted messages with the client. It was a great exercise in working with sockets, SSL encryption, and basic authentication — all crucial components for building secure networked applications.
-
-This project gave me hands-on experience with Python’s `ssl` module and helped me better understand how encrypted communication works at a basic level.
+I built a simple, secure chat app on Ubuntu using Python. It enables encrypted message exchange between a server 
+and client with basic authentication.First, I installed Python 3 and pip, then created a project folder. 
+Using OpenSSL, I generated SSL certificates to encrypt communication and protect data from interception.
+Wrote two Python scripts: a server that authenticates users and handles messages, and a client that connects 
+securely and sends authentication info.Running both in separate terminals, the server verified credentials and 
+exchanged encrypted messages with the client. This project gave me practical experience with Python’s ssl module 
+and secure socket communication.
